@@ -1,13 +1,23 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-3">
+    <div class="col-md-3">
       <%= render 'users/user', user: @user %>
       <h2>New book</h2>
       <%= render 'books/book', book: @book %>
     </div>
-    <div class="col-xs-9">
-      <h1>Book detail</h1>
-      <table class="table table-user-show">
+    <div class="col-md-9">
+
+      <table class="table book-index table-user-show">
+      <h1>Books</h1>
+
+       <thead>
+         <th></th>
+          <th>Title</th>
+          <th>Opinion</th>
+        </thead>
+
+
+
         <% @books.each do |book| %>
           <tr>
             <td><%= link_to user_path(@user) do %>
