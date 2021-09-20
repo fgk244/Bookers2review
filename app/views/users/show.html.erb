@@ -1,13 +1,13 @@
-<div class="container">
+<div class="container px-5 px-sm-0">
   <div class="row">
     <div class="col-md-3">
       <%= render 'users/user', user: @user %>
       <h2>New book</h2>
       <%= render 'books/book', book: @book %>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-8 offset-md-1">
 
-      <table class="table book-index table-user-show">
+      <table class="table table-hover table-inverse">
       <h1>Books</h1>
 
        <thead>

@@ -19,10 +19,15 @@
     </tr>
 
     <tr>
+
       <th colspan="2">
-       <%= link_to edit_user_path(current_user), class:"btn btn-outline-secondary btn-block fas fa-user-cog" do %>
-        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-      <% end %>
+      
+          <%= link_to edit_user_path(user.id) do %>
+          <span class="btn btn-outline-secondary btn-block fas fa-user-cog" aria-hidden="true"></span>
+          <% end %>
+      
+          
+      
       </th>
     </tr>
 

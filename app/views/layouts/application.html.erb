@@ -20,43 +20,43 @@
         <ul class="navbar-nav ml-auto">
 
           <% if user_signed_in? %>
-              <li class="">
+              <li>
                 <%= link_to user_path(current_user), class:"btn fas fa-home nav-link text-light" do %>
                 <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
                 <% end %>
               </li>
-              <li class="">
+              <li>
                 <%= link_to users_path, class:"btn fas fa-users nav-link text-light" do %>
                 <span class="glyphicon glyphicon-user" aria-hidden="true"> Users</span>
                 <% end %>
               </li>
-              <li class="">
+              <li>
                 <%= link_to books_path, class:"btn fas fa-book-open nav-link text-light" do %>
                 <span class="glyphicon glyphicon-book" aria-hidden="true"> Books</span>
                 <% end %>
               </li>
-              <li class="">
+              <li>
                 <%= link_to destroy_user_session_path, method: :delete, class:"btn fas fa-sign-out-alt nav-link text-light" do %>
                 <span class="glyphicon glyphicon-log-out" aria-hidden="true"> Logout</span>
                 <% end %>
               </li>
             <% else %>
-              <li class="">
+              <li>
                 <%= link_to root_path, class:"btn fas fa-home nav-link text-light" do %>
                 <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
                 <% end %>
               </li>
-              <li class="">
+              <li>
                 <%= link_to home_about_path, class:"btn fas fa-link nav-link text-light" do %>
                 <span class="glyphicon glyphicon-link" aria-hidden="true"> About</span>
                 <% end %>
               </li>
-              <li class="">
+              <li>
                 <%= link_to new_user_registration_path, class:"btn fas fa-user-plus nav-link text-light" do %>
                 <span class="glyphicon glyphicon-edit" aria-hidden="true"> sign up</span>
                 <% end %>
               </li>
-              <li class="">
+              <li>
                 <%= link_to new_user_session_path, class:"btn fas fa-sign-in-alt nav-link text-light" do %>
                 <span class="glyphicon glyphicon-log-in" aria-hidden="true"> login</span>
                 <% end %>
